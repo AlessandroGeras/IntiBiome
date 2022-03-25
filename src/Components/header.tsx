@@ -60,7 +60,7 @@ margin: 0 auto;
 width: 17vw;
 float: right;
 display:flex;
-margin-top:20px;
+margin-top:-40px;
 }
 
 .search > img {
