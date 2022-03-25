@@ -35,7 +35,6 @@ const Discoveries = () => {
 
 const Main = styled.div`
 width: 100%;
-padding-bottom:500px;
 
 h2 {
 text-align: center;

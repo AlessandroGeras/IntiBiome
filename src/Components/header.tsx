@@ -51,7 +51,6 @@ margin-left: 17vw;
 }
 
 .logo >  img {
-width: 150px;
 display: block;
 margin: 0 auto;
 }
@@ -60,11 +59,7 @@ margin: 0 auto;
 width: 17vw;
 float: right;
 display:flex;
-margin-top:-40px;
-}
-
-.search > img {
-width: 25px;
+margin-top:-45px;
 }
 
 .search > input {

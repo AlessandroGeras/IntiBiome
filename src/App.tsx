@@ -2,6 +2,7 @@ import ArticleAge from "./Components/articleage";
 import ArticleHelp from "./Components/articlehelp";
 import Banner from "./Components/banner";
 import Discoveries from "./Components/discoveries";
+import Footer from "./Components/footer";
 import Header from "./Components/header";
 import Icons from "./Components/icons";
 import MidBanner from "./Components/midbanner";
@@ -21,6 +22,7 @@ const App = () => {
       <Products />
       <MidBanner />
       <Discoveries />
+      <Footer />
     </div>
   );
 };
