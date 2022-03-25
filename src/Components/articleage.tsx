@@ -10,7 +10,6 @@ const ArticleAge = () => {
           <p>Co-created with gynaecologists, our revolutionary products have been expertly developed to support your intimate microbiome and pH balance, and strengthen overall natural health.</p>
 
           <p>As the experts in intimate hygiene, we want to bring discussion about intimate wellness care out of the dark and demystify the taboos that surround it.</p>
-
       </Main>
     </div>
   );
@@ -36,8 +35,6 @@ color:#7B7070;
 font-size: 20px;
 font-family: Trebuchet MS, sans-serif;
 padding-bottom:20px;}
-
-
 `;
 
 export default ArticleAge;

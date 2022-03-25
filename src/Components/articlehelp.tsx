@@ -36,8 +36,6 @@ color:#7B7070;
 font-size: 20px;
 font-family: Trebuchet MS, sans-serif;
 padding-bottom:20px;}
-
-
 `;
 
 export default ArticleHelp;
