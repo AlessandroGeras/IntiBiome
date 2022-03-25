@@ -22,6 +22,12 @@ const Discoveries = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
+
+      <div className="ButtonContainer">
+        <Button>
+        <a>see more</a>
+      </Button>
+      </div>
       </Main>
     </div>
   );
@@ -66,6 +72,63 @@ img {
 display: flex;
 margin: 0 auto;
 }
+
+.ButtonContainer{width:100%;
+display:flex;
+padding-top:50px;}
 `;
+
+const Button = styled.button`
+margin:0 auto;
+background-color: #1899D6;
+border: solid transparent;
+border-radius: 16px;
+border-width: 0 0 4px;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: Trebuchet MS, sans-serif;
+font-size: 20px;
+font-weight: bold;
+margin-top:30px;
+margin-bottom:25px;
+outline: none;
+overflow: visible;
+padding: 20px 6px;
+text-align: center;
+touch-action: manipulation;
+transform: translateZ(0);
+transition: filter .2s;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+width: 325px;
+
+&:after {background-clip: padding-box;
+background-color: #1CB0F6;
+border: solid transparent;
+border-radius: 16px;
+border-width: 0 0 4px;
+bottom: -4px;
+content: "";
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+z-index: -1;}
+
+:hover:not(:disabled) {
+filter: brightness(1.1);
+}
+
+a {text-decoration:none}
+
+a:visited{color:white}
+`;
+
+
+
 
 export default Discoveries;
