@@ -39,8 +39,6 @@ const Footer = () => {
           <img src={require("../assets/images/ulabs.png")} />
         </div>
 
-        <div className="Bottom-Middle"></div>
-
         <div className="Bottom-Right">
             <img src={require("../assets/images/instagram.png")} />
         </div>
@@ -103,9 +101,6 @@ float: left;
 display: block;
 margin: 0 auto;
 }
-
-.Bottom-Middle{width:40%;
-float:left;}
     
 .Bottom-Right {
 width: 30%;

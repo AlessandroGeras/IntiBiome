@@ -16,6 +16,9 @@ const Header = () => {
   return (
     <div>
       <Main>
+        <div className="Menu">    
+        <div className="Unicode">&#9776;</div>      
+        </div>
         <div className="logo">
           <img src={require("../assets/images/logo.png")} />
         </div>
@@ -43,11 +46,21 @@ display: block;
 padding-top:0.25%;
 overflow: auto;
 
+.Menu{  
+width: 17%;
+float: left;
+margin-top:30px;
+visibility:hidden;
+}
+
+.Unicode{width:15px;
+display:flex;
+margin:0 auto;}
+
 .logo {
-width: 66vw;
+width: 66%;
 margin: 0 auto;
 float: left;
-margin-left: 17vw;
 }
 
 .logo >  img {
@@ -56,10 +69,10 @@ margin: 0 auto;
 }
 
 .search {
-width: 17vw;
+width: 17%;
 float: right;
 display:flex;
-margin-top:-45px;
+margin-top:30px;
 }
 
 .search > input {
