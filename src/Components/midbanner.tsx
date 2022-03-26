@@ -18,6 +18,8 @@ padding-top:100px;
 img {
     max-height:100%; max-width:100%;
 }
+
+
 `;
 
 export default MidBanner;

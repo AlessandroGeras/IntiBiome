@@ -30,7 +30,7 @@ font-weight: bold;
 padding:30px 0 10px 0;}
 
 p{text-align:center;
-width:35%;
+width:510px;
 margin:0 auto;
 color:#7B7070;
 font-size: 20px;

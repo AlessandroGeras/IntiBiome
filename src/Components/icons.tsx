@@ -14,9 +14,11 @@ const Icons = () => {
 const Main = styled.div`
 width: 100%;
 display:flex;
+margin-top:50px;
 
 img {
     margin:0 auto;
+    max-height:100%; max-width:100%;
 }
 `;
 

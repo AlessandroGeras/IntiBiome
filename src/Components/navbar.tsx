@@ -2,11 +2,12 @@ import { useState } from "react";
 import styled from "styled-components";
 import { IoIosArrowDown } from "react-icons/io";
 import { IconContext } from "react-icons";
+import MobileNavbar from "./mobilenavbar";
 
 const Navbar = () => {
   var Time: NodeJS.Timeout;
 
-  const [producsActive, producsActiveSet] = useState(false);
+  const [productsActive, producsActiveSet] = useState(false);
   const [aboutActive, aboutActiveSet] = useState(false);
   const [healthActive, healthActiveSet] = useState(false);
 
@@ -98,7 +99,7 @@ const Navbar = () => {
 
         <div
           className={
-            producsActive === true
+            productsActive === true
               ? "productsBackGroundActive"
               : "productsBackGroundDisabled"
           }
@@ -172,6 +173,7 @@ const Navbar = () => {
           </ul>
         </div>
       </Main>
+      <MobileNavbar value={false}/>
     </div>
   );
 };
