@@ -49,7 +49,8 @@ overflow: auto;
 .Menu{  
 width: 17%;
 float: left;
-margin-top:30px;
+margin-top:20px;
+font-size:25px;
 visibility:hidden;
 }
 
@@ -72,7 +73,7 @@ margin: 0 auto;
 width: 17%;
 float: right;
 display:flex;
-margin-top:30px;
+margin-top:25px;
 }
 
 .search > input {
@@ -101,6 +102,12 @@ opacity: 0.5;
 .search > .inputDisabled {
   width:0px
 }
+
+
+/*########## Mobile##########*/
+  @media screen and (max-width: 1260px) {
+    .Menu{visibility:visible;}
+  }
 `;
 
 export default Header;

@@ -182,6 +182,7 @@ color: white;
 font-size: 16px;
 font-family: Trebuchet MS, sans-serif;
 font-weight: bold;
+display:initial;
 
 .mainMenuBackground {
 width: 100%;
@@ -241,6 +242,11 @@ margin-left: 0;
 .health {
 margin-left: -150px;
 }
+
+/*########## Mobile##########*/
+  @media screen and (max-width: 1260px) {
+     display:none;
+  }
 `;
 
 export default Navbar;
