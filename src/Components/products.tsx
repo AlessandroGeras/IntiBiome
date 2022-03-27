@@ -2,37 +2,30 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState,useEffect } from "react";
 
 const Products = () => {
-  const [showSlides, showSlidesSet] = useState(3);
-  const [centerPaddingValue, centerPaddingValueSet] = useState("0");
-
-
-const handleResize = () => {
-  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-  if (vw>=700){
-    showSlidesSet(3);
-    centerPaddingValueSet("0");
-  }
-  if (vw<700){
-    showSlidesSet(1);
-    centerPaddingValueSet("155px");
-  }
-}  
-
-useEffect(() => {
-  window.addEventListener("resize", handleResize)
-})
-
-
+  
   const settings = {    
     centerMode: true, 
-slidesToShow: showSlides,
 speed: 500,
 infinite: false,
 slidesToScroll: 2,
-centerPadding:centerPaddingValue,
+
+responsive: [ 
+  {
+    breakpoint: 2000,
+    settings: {
+      slidesToShow: 3,
+    }
+  },
+  {
+    breakpoint: 700,
+    settings: {
+      slidesToShow: 1,
+      centerPadding:"25%",
+    }
+  }, 
+]
   };
 
   return (
@@ -59,26 +52,6 @@ centerPadding:centerPaddingValue,
             </div>
           </Slider>
         </div>
-
-        {/*  <div className="Flexbox">
-          <div className="ImageBox">
-            <img src={require("../assets/images/blue.png")} />
-            <p>intibiome wellness daily intimate wash</p>
-            <div className="wellness">wellness</div>
-          </div>
-
-          <div className="ImageBox">
-            <img src={require("../assets/images/green.png")} />
-            <p>intibiome wellness daily intimate wash</p>
-            <div className="active">active</div>
-          </div>
-
-          <div className="ImageBox">
-            <img src={require("../assets/images/pink.png")} />
-            <p>intibiome wellness daily intimate wash</p>
-            <div className="agecare">agecare</div>
-          </div>
-        </div> */}
       </Main>
     </div>
   );
@@ -98,7 +71,7 @@ const Main = styled.div`
 
   p {
     text-align: center;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     color: #7b7070;
     font-size: 20px;
@@ -107,8 +80,8 @@ const Main = styled.div`
   }
 
   .SliderContainer {
-    width: 1150px;
-    margin: 0 auto;  
+    width: 1125px;
+    margin: 0 auto; 
   }  
 
   .ImageBox {
@@ -153,20 +126,30 @@ const Main = styled.div`
 
 
 /*########## Mobile##########*/
-  @media screen and (max-width: 1150px) { 
+  @media screen and (max-width: 1180px) { 
     .SliderContainer {
     width: 850px;
-    }
+    }   
 
     p{width:200px;}  
   }
 
-  @media screen and (max-width: 850px) { 
+  @media screen and (max-width: 880px) { 
     .SliderContainer {
     width: 675px;
     }
 
-    p{width:170px;font-size:18px}  
+    p{width:165px;font-size:17px;}  
+  }
+
+  @media screen and (max-width: 700px) { 
+    .SliderContainer {
+    width: 100%;
+    }
+
+    p{width:100%;font-size: clamp(1rem, 2.5vw, 2rem); }  
+
+   
   }
 `;
 

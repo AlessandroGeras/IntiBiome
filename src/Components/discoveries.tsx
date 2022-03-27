@@ -1,27 +1,54 @@
 import styled from "styled-components";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Discoveries = () => {
+
+  const settings = {    
+    centerMode: true, 
+speed: 500,
+infinite: false,
+slidesToScroll: 2,
+
+responsive: [ 
+  {
+    breakpoint: 2000,
+    settings: {
+      slidesToShow: 3,
+    }
+  },
+  {
+    breakpoint: 700,
+    settings: {
+      slidesToShow: 1,
+      centerPadding:"25%",
+    }
+  }, 
+]
+  };
+
   return (
     <div>
       <Main>
         <h2>keep up to date with our discoveries</h2>
 
-        <div className="Flexbox">
-          <div className="ImageBox">
+        <div className="SliderContainer">
+          <Slider {...settings}>
+            <div className="ImageBox">
             <img src={require("../assets/images/discoveries1.png")} />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
           </div>
-
           <div className="ImageBox">
             <img src={require("../assets/images/discoveries2.png")} />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-
           <div className="ImageBox">
             <img src={require("../assets/images/discoveries3.png")} />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-        </div>
+          </Slider>
+        </div>     
 
       <div className="ButtonContainer">
         <Button>
@@ -54,20 +81,13 @@ font-family: Trebuchet MS, sans-serif;
 padding:20px 40px 40px 0;
 }
 
-.Flexbox {
-display: flex;
-width: 1150px;
-margin: 0 auto;
-}
-
 .ImageBox {
 margin: 0 auto;
-width: 357px;
 box-shadow: 0 0 20px 1px #ddd;
 border-radius: 15px;
 }
 
-img {
+img {width:100%;
 display: flex;
 margin: 0 auto;
 }
@@ -75,6 +95,34 @@ margin: 0 auto;
 .ButtonContainer{width:100%;
 display:flex;
 padding-top:50px;}
+
+.SliderContainer {
+  width: 1150px;
+  margin: 0 auto;  
+}  
+
+.slick-list {margin: 0 -5px;
+  padding:5px 0 5px 0;}
+
+.slick-slide>div {padding: 0 15px;}
+
+
+/*########## Mobile##########*/
+  @media screen and (max-width: 1180px) { 
+    .SliderContainer {
+    width: 850px;
+    }
+
+    p{font-size: 15px;padding:15px 20px 35px 0;}
+  }
+
+  @media screen and (max-width: 880px) { 
+    .SliderContainer {
+    width: 685px;
+    }
+
+    p{font-size: 12px;padding:10px 10px 30px 0;}
+  }
 `;
 
 const Button = styled.button`

@@ -35,6 +35,17 @@ color:#7B7070;
 font-size: 20px;
 font-family: Trebuchet MS, sans-serif;
 padding-bottom:20px;}
+
+
+@media screen and (max-width: 880px) { 
+  margin-bottom:110px;
+
+  h2 {
+  width: 500px;
+  }
+
+  p{width:470px;}
+}
 `;
 
 export default ArticleAge;
