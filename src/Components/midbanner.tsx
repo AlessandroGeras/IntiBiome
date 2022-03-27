@@ -13,7 +13,7 @@ const MidBanner = () => {
 
 const Main = styled.div`
 width: 100%;
-padding-top:100px;
+padding-top:120px;
 
 img {
     max-height:100%; max-width:100%;

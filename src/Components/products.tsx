@@ -37,7 +37,7 @@ responsive: [
           <Slider {...settings}>
             <div className="ImageBox">
               <img src={require("../assets/images/blue.png")} />
-              <p>intibiome wellness daily <br /> intimate wash</p>
+              <p>intibiome wellness daily intimate wash</p>
               <div className="wellness">wellness</div>
             </div>
             <div className="ImageBox">
@@ -47,7 +47,7 @@ responsive: [
             </div>
             <div className="ImageBox">
               <img src={require("../assets/images/pink.png")} />
-              <p>intibiome agecare dryness <br />relief intimate wash</p>
+              <p>intibiome agecare dryness relief intimate wash</p>
               <div className="agecare">agecare</div>
             </div>
           </Slider>
@@ -78,12 +78,14 @@ const Main = styled.div`
     color: #7b7070;
     font-size: 20px;
     font-family: Trebuchet MS, sans-serif;
+    letter-spacing: 0.20px;
+    line-height:28px; 
     padding-bottom: 30px;
   }
 
   .SliderContainer {
-    width: 1125px;
-    margin: 0 auto; 
+    width: 1150px;
+    margin: 0 auto;
   }  
 
   .ImageBox {
@@ -105,6 +107,9 @@ const Main = styled.div`
     font-size: 25px;
     font-family: Trebuchet MS, sans-serif;
     font-weight: bold;
+    letter-spacing: 0.20px;
+    line-height:36px; 
+    text-transform: lowercase;
     border-radius: 0 0 15px 15px;
     padding: 15px 0 15px 0;
   }

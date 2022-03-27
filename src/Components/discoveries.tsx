@@ -69,6 +69,8 @@ color: #389cd6;
 font-size: 39px;
 font-family: Trebuchet MS, sans-serif;
 font-weight: bold;
+letter-spacing: 0.20px;
+line-height:50px;
 padding: 80px 0 50px 0;
 }
 
@@ -78,6 +80,8 @@ margin: 0 auto;
 color: #7b7070;
 font-size: 20px;
 font-family: Trebuchet MS, sans-serif;
+letter-spacing: 0.20px;
+line-height:28px;
 padding:20px 40px 40px 0;
 }
 
@@ -138,6 +142,9 @@ display: inline-block;
 font-family: Trebuchet MS, sans-serif;
 font-size: 20px;
 font-weight: bold;
+letter-spacing: 0.20px;
+line-height:28px;
+text-transform: lowercase;
 margin-top:30px;
 margin-bottom:25px;
 outline: none;

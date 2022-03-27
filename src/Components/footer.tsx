@@ -50,23 +50,25 @@ const Footer = () => {
 
 const Main = styled.div`
 width: 100%;
-height: 120px;
+height: 140px;
 background:#389CD6;
 padding: 50px 0 50px 0;
-margin-top: 100px;
+margin-top: 80px;
 color: white;
 font-size: 16px;
 font-family: Trebuchet MS, sans-serif;
 font-weight: bold;
+letter-spacing: 0.20px;
+line-height:22px; 
 
 .mainMenuBackground {
 width: 100%;
 background: #389cd6;
 }
 
-.maniMenu {
-width: 65%;
+.mainMenu {
 margin: 0 auto;
+margin-top:-15px;
 }
 
 ul {
@@ -80,7 +82,7 @@ padding: 10px;
 }
 
 ul > li {
-padding: 0 40px 0 40px;
+padding: 0 32.5px 0 32.5px;
 margin: 0;
 }
 
@@ -90,7 +92,7 @@ height: 30px;
 vertical-align: middle;
 }
 
-.Bottom-Container {margin-top:30px;}
+.Bottom-Container {margin-top:50px;}
 
 .Bottom-Left {
 width: 30%;
