@@ -118,10 +118,10 @@ padding-top:50px;}
 
   @media screen and (max-width: 880px) { 
     .SliderContainer {
-    width: 685px;
+    width: 675px;
     }
 
-    p{font-size: 12px;padding:10px 10px 30px 0;}
+    p{font-size: 12px;padding:10px 10px 30px 2px;}
   }
 `;
 

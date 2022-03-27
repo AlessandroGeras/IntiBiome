@@ -64,7 +64,7 @@ width: 100%;
 background: #389cd6;
 }
 
-.manMenu {
+.maniMenu {
 width: 65%;
 margin: 0 auto;
 }
@@ -111,6 +111,17 @@ float: right;
 display: block;
 margin: 0 auto;
 }
+
+
+/*########## Mobile##########*/
+  @media screen and (max-width: 1180px) { 
+    font-size:16px;
+
+    ul > li {
+      padding: 0 25px 0 25px;
+      margin: 0;
+      }
+  }
 `;
 
 export default Footer;
