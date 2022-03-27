@@ -10,6 +10,7 @@ import Navbar from "./Components/navbar";
 import Products from "./Components/products";
 
 
+
 const App = () => {
   return (
     <div>

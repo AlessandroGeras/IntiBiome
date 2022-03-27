@@ -20,7 +20,7 @@ width: 100%;
 height:350px;
 
 h2{text-align:center;
-width:45%;
+width:800px;
 margin:0 auto;
 color: #389CD6;
 font-size: 39px;
@@ -29,7 +29,7 @@ font-weight: bold;
 padding:45px 0 35px 0;}
 
 p{text-align:center;
-width:50%;
+width:715px;
 margin:0 auto;
 color:#7B7070;
 font-size: 20px;

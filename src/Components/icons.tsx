@@ -14,7 +14,7 @@ const Icons = () => {
 const Main = styled.div`
 width: 100%;
 display:flex;
-margin-top:50px;
+margin-top:30px;
 
 img {
     margin:0 auto;
