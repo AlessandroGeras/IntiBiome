@@ -66,7 +66,9 @@ const Main = styled.div`
     font-size: 39px;
     font-family: Trebuchet MS, sans-serif;
     font-weight: bold;
-    padding: 30px 0 20px 0;
+    letter-spacing: 0.20px;
+    line-height:50px;
+    padding: 90px 0 40px 0;
   }
 
   p {

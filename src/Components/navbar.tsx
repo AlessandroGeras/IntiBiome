@@ -76,7 +76,7 @@ const Navbar = () => {
                     onMouseEnter={productsMenuActive}
                     onMouseLeave={productsMenuDisable}
                   >
-                    our producs <IoIosArrowDown />
+                    our products <IoIosArrowDown />
                   </a>
                 </li>
                 <li>
@@ -184,6 +184,8 @@ color: white;
 font-size: 16px;
 font-family: Trebuchet MS, sans-serif;
 font-weight: bold;
+letter-spacing: 0.20px;
+line-height:22px;
 display:initial;
 
 .mainMenuBackground {

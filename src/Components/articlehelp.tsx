@@ -27,14 +27,18 @@ color: #389CD6;
 font-size: 39px;
 font-family: Trebuchet MS, sans-serif;
 font-weight: bold;
+letter-spacing: 0.20px;
+line-height:50px;
 padding:30px 0 10px 0;}
 
 p{text-align:center;
-width:510px;
+width:515px;
 margin:0 auto;
 color:#7B7070;
 font-size: 20px;
 font-family: Trebuchet MS, sans-serif;
+letter-spacing: 0.20px;
+line-height:28px;
 padding-bottom:20px;}
 `;
 
