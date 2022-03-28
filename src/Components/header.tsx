@@ -22,7 +22,7 @@ const Header = () => {
         <div className="logo">
           <img src={require("../assets/images/logo.png")} />
         </div>
-        <div className="search">
+        <div id="search" className={inputActive === true ? "searchActive" : "searchDisabled"}>
           <a onClick={onclick}>
             <img
               id="search_icon"
@@ -56,7 +56,7 @@ visibility:hidden;
 
 .Unicode{width:15px;
 display:flex;
-margin:0 auto;}
+margin:0 0 0 auto}
 
 .logo {
 width: 66%;
@@ -69,18 +69,19 @@ display: block;
 margin: 0 auto;
 }
 
-.search {
-width: 17%;
+.searchActive,.searchDisabled{width:17%}
+
+#search {
 float: right;
 display:flex;
 margin-top:25px;
 }
 
-.search > input {
+#search > input {
 background:#389CD6;
 color:white;
 width:0px;
-margin-left:-30px;
+margin-left:-20px;
 padding:0;
 border:0;
 font-size:14px;
@@ -90,16 +91,16 @@ transform:  translate(-100%,0%);
 transition:1s;}
 }
 
-.search > input::placeholder {
+$search > input::placeholder {
 color: white;
 opacity: 0.5;
 }
 
-.search > .inputActive {
-  width:240px
+#search > .inputActive {
+  width:140px
 }
 
-.search > .inputDisabled {
+#search > .inputDisabled {
   width:0px
 }
 
@@ -107,6 +108,10 @@ opacity: 0.5;
 /*########## Mobile##########*/
   @media screen and (max-width: 1260px) {
     .Menu{visibility:visible;}
+  }
+
+  @media screen and (max-width: 850px) {
+    .searchActive{width:5%}
   }
 `;
 
