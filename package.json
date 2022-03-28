@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Projeto IntiBiome by Alessandro Geras",
   "author": "Alessandro Geras",
+  "homepage": "https://AlessandroGeras.github.io/IntiBiome",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
@@ -24,10 +25,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +51,7 @@
   "devDependencies": {
     "@types/jquery": "^3.5.14",
     "@types/react-slick": "^0.23.8",
-    "@types/styled-components": "^5.1.24"
+    "@types/styled-components": "^5.1.24",
+    "gh-pages": "^3.2.3"
   }
 }
