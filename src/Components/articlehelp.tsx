@@ -40,6 +40,19 @@ font-family: Trebuchet MS, sans-serif;
 letter-spacing: 0.20px;
 line-height:28px;
 padding-bottom:20px;}
+
+
+/*########## Mobile##########*/
+  @media screen and (max-width: 550px) { 
+    h2 {font-size: 31px;
+      line-height:40px;
+      padding:10px 0 5px 0;
+    }   
+
+    p{font-size: 16px;
+      line-height:22px;
+      width:385px;}  
+  }
 `;
 
 export default ArticleHelp;

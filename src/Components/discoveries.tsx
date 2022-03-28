@@ -22,7 +22,7 @@ responsive: [
     breakpoint: 700,
     settings: {
       slidesToShow: 1,
-      centerPadding:"25%",
+      centerPadding:"12%",
     }
   }, 
 ]
@@ -98,7 +98,7 @@ margin: 0 auto;
 
 .ButtonContainer{width:100%;
 display:flex;
-padding-top:50px;}
+padding-top:5px;}
 
 .SliderContainer {
   width: 1150px;
@@ -125,7 +125,33 @@ padding-top:50px;}
     width: 675px;
     }
 
-    p{font-size: 12px;padding:10px 10px 30px 2px;}
+    p{font-size: 11px;
+    padding:10px 0px 30px 0px;
+    margin-left:-5px;
+    width:100%;
+    line-height:20px;}
+  }
+
+  @media screen and (max-width: 700px) { 
+    .SliderContainer {
+    width: 100%;
+    padding:5px 0 5px 0;
+    overflow:hidden;
+    }
+    
+    h2{font-size: 31px;
+      line-height:40px;
+      padding: 7.5px 0 7.5px 0;}
+
+    p{width:70%;font-size:20px;padding-bottom:60px;}  
+  } 
+
+  @media screen and (max-width: 588px) { 
+    p{width:90%}
+  }
+
+  @media screen and (max-width: 450px) { 
+    p{width:90%;margin-left:10px;}
   }
 `;
 

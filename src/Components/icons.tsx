@@ -20,6 +20,11 @@ img {
     margin:0 auto;
     max-height:100%; max-width:100%;
 }
+
+
+@media screen and (max-width: 550px) { 
+  margin-top:-15px;
+  } 
 `;
 
 export default Icons;

@@ -40,7 +40,7 @@ letter-spacing: 0.20px;
 line-height:28px;
 padding-bottom:20px;}
 
-
+/*########## Mobile##########*/
 @media screen and (max-width: 880px) { 
   margin-bottom:110px;
 
@@ -50,6 +50,18 @@ padding-bottom:20px;}
 
   p{width:470px;}
 }
+
+  @media screen and (max-width: 550px) { 
+    h2 {width: 400px;
+      font-size: 31px;
+      line-height:40px;
+      padding:40px 0 35px 0;
+    }   
+
+    p{font-size: 16px;
+      line-height:22px;
+      width:385px;}  
+  }
 `;
 
 export default ArticleAge;

@@ -7,22 +7,23 @@ const Footer = () => {
         <div className="mainMenuBackground">
           <div className="mainMenu">
             <ul>
-              <li>
+              <li className="border">
+              {" "}
                 <a>contact us</a>
               </li>
-              <li>
+              <li id="borderFaq" className="border">
                 {" "}
                 <a>faq</a>
               </li>
-              <li>
+              <li className="border">
                 {" "}
                 <a>site map</a>
               </li>
-              <li>
+              <li className="border">
                 {" "}
                 <a>privacity policy</a>
               </li>
-              <li>
+              <li id="borderCookies" className="border">
                 {" "}
                 <a>cookies policy</a>
               </li>
@@ -124,6 +125,43 @@ margin: 0 auto;
       margin: 0;
       }
   }
+
+  @media screen and (max-width: 850px) { 
+    ul{display:block;
+    text-align:center;
+  }
+
+  ul > li{padding:26px;}
+
+  li.border:after{content:"";border-top:2px solid white;margin:26px auto 0 auto;width:20px;display:block;} 
+
+  #borderFaq {margin-top:-26px;}
+
+  #borderCookies {margin-bottom:-13px;}
+    
+  ul li ~ li {
+    border-left:0;
+    }
+
+    .mainMenu {
+      margin-top:-45px;
+      }
+
+      .Bottom-Container{width:100%;margin-top:-50px;}
+
+      .Bottom-Left {
+        float:none;
+        margin-top:215px;
+        width: 100%;
+        }
+
+        .Bottom-Right {
+          float:none;
+          margin-top:-180px;
+          width: 100%;
+          }
+
+    height: 670px;
 `;
 
 export default Footer;

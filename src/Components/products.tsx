@@ -9,7 +9,7 @@ const Products = () => {
     centerMode: true, 
 speed: 500,
 infinite: false,
-slidesToScroll: 2,
+slidesToScroll: 1,
 
 responsive: [ 
   {
@@ -22,7 +22,7 @@ responsive: [
     breakpoint: 700,
     settings: {
       slidesToShow: 1,
-      centerPadding:"25%",
+      centerPadding:"14%",
     }
   }, 
 ]
@@ -37,12 +37,12 @@ responsive: [
           <Slider {...settings}>
             <div className="ImageBox">
               <img src={require("../assets/images/blue.png")} />
-              <p>intibiome wellness daily intimate wash</p>
+              <p className="productone">intibiome wellness daily intimate wash</p>
               <div className="wellness">wellness</div>
             </div>
             <div className="ImageBox">
               <img src={require("../assets/images/green.png")} />
-              <p>intibiome active extra protection intimate wash</p>
+              <p className="producttwo">intibiome active extra protection intimate wash</p>
               <div className="active">active</div>
             </div>
             <div className="ImageBox">
@@ -73,7 +73,7 @@ const Main = styled.div`
 
   p {
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     color: #7b7070;
     font-size: 20px;
@@ -82,6 +82,8 @@ const Main = styled.div`
     line-height:28px; 
     padding-bottom: 30px;
   }
+
+  .producttwo{width:95%}
 
   .SliderContainer {
     width: 1150px;
@@ -111,7 +113,7 @@ const Main = styled.div`
     line-height:36px; 
     text-transform: lowercase;
     border-radius: 0 0 15px 15px;
-    padding: 15px 0 15px 0;
+    padding: 15px 0 20px 0;
   }
 
   .wellness {
@@ -139,6 +141,8 @@ const Main = styled.div`
     }   
 
     p{width:200px;}  
+
+    .productone{width:80%;}
   }
 
   @media screen and (max-width: 880px) { 
@@ -152,11 +156,25 @@ const Main = styled.div`
   @media screen and (max-width: 700px) { 
     .SliderContainer {
     width: 100%;
+    overflow:hidden;
     }
 
-    p{width:100%;font-size: clamp(1rem, 2.5vw, 2rem); }  
+    p{width:90%;font-size:20px;}  
 
-   
+    .productone{width:75%}
+
+    .producttwo{width:80%}
+  }
+
+    @media screen and (max-width: 550px) { 
+      h2 {font-size: 31px;
+        line-height:40px;
+        padding:0px 0 10px 0;
+        margin-top:-15px;
+      }   
+      
+      @media screen and (max-width: 450px) { 
+        .producttwo{width:100%;} 
   }
 `;
 

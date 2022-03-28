@@ -2,7 +2,6 @@ import { useState } from "react";
 import styled from "styled-components";
 import { IoIosArrowDown } from "react-icons/io";
 import { IconContext } from "react-icons";
-import MobileNavbar from "./mobilenavbar";
 
 const Navbar = () => {
   var Time: NodeJS.Timeout;
@@ -173,7 +172,6 @@ const Navbar = () => {
           </ul>
         </div>
       </Main>
-      <MobileNavbar value={false}/>
     </div>
   );
 };

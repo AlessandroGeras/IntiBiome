@@ -1,29 +1,36 @@
 import { useState } from "react";
 import styled from "styled-components";
+import MobileNavbar from "./mobilenavbar";
 
 const Header = () => {
   const [inputActive, inputActiveSetValue] = useState(false);
   const [inputValue, inputValueSet] = useState("Find a product");
+  const [openMenu, openMenuSet] = useState(false);
 
-  const onclick = () => {
+  const activeSearch = () => {
     inputActiveSetValue(!inputActive);
   };
 
-  const onfocus = () => {
+  const inputFocus = () => {
     inputValueSet("");
+  };
+
+  const activeMenu = () => {
+    openMenuSet(!openMenu);
   };
 
   return (
     <div>
       <Main>
         <div className="Menu">    
-        <div className="Unicode">&#9776;</div>      
+        <div id="UnicodeOpenMenu" className={openMenu === true ? "hideUnicode" : "showUnicode"} onClick={activeMenu}>&#9776;</div>
+        <div id="UnicodeCloseMenu" className={openMenu === true ? "showUnicode" : "hideUnicode"} onClick={activeMenu}>&#10005;</div>      
         </div>
         <div className="logo">
           <img src={require("../assets/images/logo.png")} />
         </div>
         <div id="search" className={inputActive === true ? "searchActive" : "searchDisabled"}>
-          <a onClick={onclick}>
+          <a onClick={activeSearch}>
             <img
               id="search_icon"
               src={require("../assets/images/search.png")}
@@ -32,10 +39,11 @@ const Header = () => {
           <input
             className={inputActive === true ? "inputActive" : "inputDisabled"}
             placeholder={inputValue}
-            onFocus={onfocus}
+            onFocus={inputFocus}
           />
         </div>
-      </Main>
+      </Main>      
+      <MobileNavbar value={openMenu}/>
     </div>
   );
 };
@@ -54,9 +62,16 @@ font-size:25px;
 visibility:hidden;
 }
 
-.Unicode{width:15px;
-display:flex;
-margin:0 0 0 auto}
+#UnicodeOpenMenu,#UnicodeCloseMenu{width:15px;
+margin:0 0 0 auto;}
+
+#UnicodeOpenMenu:hover{cursor:pointer}
+
+#UnicodeCloseMenu:hover{cursor:pointer}
+
+.showUnicode{display:flex;}
+
+.hideUnicode{display:none}
 
 .logo {
 width: 66%;
@@ -76,6 +91,8 @@ float: right;
 display:flex;
 margin-top:25px;
 }
+
+#search > a :hover{cursor:pointer}
 
 #search > input {
 background:#389CD6;
