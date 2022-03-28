@@ -22,14 +22,29 @@ const Header = () => {
   return (
     <div>
       <Main>
-        <div className="Menu">    
-        <div id="UnicodeOpenMenu" className={openMenu === true ? "hideUnicode" : "showUnicode"} onClick={activeMenu}>&#9776;</div>
-        <div id="UnicodeCloseMenu" className={openMenu === true ? "showUnicode" : "hideUnicode"} onClick={activeMenu}>&#10005;</div>      
+        <div className="Menu">
+          <div
+            id="UnicodeOpenMenu"
+            className={openMenu === true ? "hideUnicode" : "showUnicode"}
+            onClick={activeMenu}
+          >
+            &#9776;
+          </div>
+          <div
+            id="UnicodeCloseMenu"
+            className={openMenu === true ? "showUnicode" : "hideUnicode"}
+            onClick={activeMenu}
+          >
+            &#10005;
+          </div>
         </div>
         <div className="logo">
           <img src={require("../assets/images/logo.png")} />
         </div>
-        <div id="search" className={inputActive === true ? "searchActive" : "searchDisabled"}>
+        <div
+          id="search"
+          className={inputActive === true ? "searchActive" : "searchDisabled"}
+        >
           <a onClick={activeSearch}>
             <img
               id="search_icon"
@@ -42,8 +57,8 @@ const Header = () => {
             onFocus={inputFocus}
           />
         </div>
-      </Main>      
-      <MobileNavbar value={openMenu}/>
+      </Main>
+      <MobileNavbar value={openMenu} />
     </div>
   );
 };

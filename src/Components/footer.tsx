@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="mainMenu">
             <ul>
               <li className="border">
-              {" "}
+                {" "}
                 <a>contact us</a>
               </li>
               <li id="borderFaq" className="border">
@@ -36,13 +36,13 @@ const Footer = () => {
         </div>
 
         <div className="Bottom-Container">
-        <div className="Bottom-Left">
-          <img src={require("../assets/images/ulabs.png")} />
-        </div>
+          <div className="Bottom-Left">
+            <img src={require("../assets/images/ulabs.png")} />
+          </div>
 
-        <div className="Bottom-Right">
+          <div className="Bottom-Right">
             <img src={require("../assets/images/instagram.png")} />
-        </div>
+          </div>
         </div>
       </Main>
     </div>

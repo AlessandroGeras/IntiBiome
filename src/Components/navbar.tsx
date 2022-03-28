@@ -177,77 +177,77 @@ const Navbar = () => {
 };
 
 const Main = styled.div`
-width: 100%;
-color: white;
-font-size: 16px;
-font-family: Trebuchet MS, sans-serif;
-font-weight: bold;
-letter-spacing: 0.20px;
-line-height:22px;
-display:initial;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  display: initial;
 
-.mainMenuBackground {
-width: 100%;
-background: #389cd6;
-}
+  .mainMenuBackground {
+    width: 100%;
+    background: #389cd6;
+  }
 
-.manMenu {
-width: 65%;
-margin: 0 auto;
-}
+  .manMenu {
+    width: 65%;
+    margin: 0 auto;
+  }
 
-ul {
-display: flex;
-justify-content: center;
-list-style-type: none;
-margin: 0 auto;
-margin-top: 5px;
-padding: 10px;
-}
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 10px;
+  }
 
-ul > li {
-padding: 0 40px 0 40px;
-margin: 0;
-}
+  ul > li {
+    padding: 0 40px 0 40px;
+    margin: 0;
+  }
 
-.productsBackGroundActive,
-.aboutBackGroundActive,
-.healthBackGroundActive {
-position: absolute;
-visibility: visible;
-width: 100%;
-background: #7b7070;
-max-height: 1;
-transition: max-height 1 ease;
-}
+  .productsBackGroundActive,
+  .aboutBackGroundActive,
+  .healthBackGroundActive {
+    position: absolute;
+    visibility: visible;
+    width: 100%;
+    background: #7b7070;
+    max-height: 1;
+    transition: max-height 1 ease;
+  }
 
-.productsBackGroundDisabled,
-.aboutBackGroundDisabled,
-.healthBackGroundDisabled {
-visibility: hidden;
-max-height: 0;
-transition: max-height 1 ease;
-}
+  .productsBackGroundDisabled,
+  .aboutBackGroundDisabled,
+  .healthBackGroundDisabled {
+    visibility: hidden;
+    max-height: 0;
+    transition: max-height 1 ease;
+  }
 
-.products,
-.about,
-.health {
-width: 65%;
-margin: 0 auto;
-}
+  .products,
+  .about,
+  .health {
+    width: 65%;
+    margin: 0 auto;
+  }
 
-.products {
-margin-left: 0;
-}
+  .products {
+    margin-left: 0;
+  }
 
-.about,
-.health {
-margin-left: -150px;
-}
+  .about,
+  .health {
+    margin-left: -150px;
+  }
 
-/*########## Mobile##########*/
+  /*########## Mobile##########*/
   @media screen and (max-width: 1260px) {
-     display:none;
+    display: none;
   }
 `;
 

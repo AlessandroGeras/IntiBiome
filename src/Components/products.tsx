@@ -4,28 +4,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Products = () => {
-  
-  const settings = {    
-    centerMode: true, 
-speed: 500,
-infinite: false,
-slidesToScroll: 1,
+  const settings = {
+    centerMode: true,
+    speed: 500,
+    infinite: false,
+    slidesToScroll: 1,
 
-responsive: [ 
-  {
-    breakpoint: 2000,
-    settings: {
-      slidesToShow: 3,
-    }
-  },
-  {
-    breakpoint: 700,
-    settings: {
-      slidesToShow: 1,
-      centerPadding:"14%",
-    }
-  }, 
-]
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "14%",
+        },
+      },
+    ],
   };
 
   return (
@@ -37,12 +36,16 @@ responsive: [
           <Slider {...settings}>
             <div className="ImageBox">
               <img src={require("../assets/images/blue.png")} />
-              <p className="productone">intibiome wellness daily intimate wash</p>
+              <p className="productone">
+                intibiome wellness daily intimate wash
+              </p>
               <div className="wellness">wellness</div>
             </div>
             <div className="ImageBox">
               <img src={require("../assets/images/green.png")} />
-              <p className="producttwo">intibiome active extra protection intimate wash</p>
+              <p className="producttwo">
+                intibiome active extra protection intimate wash
+              </p>
               <div className="active">active</div>
             </div>
             <div className="ImageBox">
@@ -176,7 +179,19 @@ const Main = styled.div`
       @media screen and (max-width: 450px) { 
         .producttwo{width:100%;} 
   }
+
+  @media screen and (max-width: 400px) { 
+    h2{ margin-top:140px;}
+
+    p{width:100%;} 
+
+    .producttwo{width:95%;}
+}
+
+@media screen and (max-width: 280px) { 
+
+  p{font-size:14px} 
+}
 `;
 
 export default Products;
-
