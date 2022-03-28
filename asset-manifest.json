@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/IntiBiome/static/css/main.466d5b11.css",
+    "main.js": "/IntiBiome/static/js/main.05a8212e.js",
+    "static/media/banner.png": "/IntiBiome/static/media/banner.883b44100102b2886c65.png",
+    "static/media/midbanner.png": "/IntiBiome/static/media/midbanner.1ec974215c3eafd98273.png",
+    "static/media/banner_mobile.png": "/IntiBiome/static/media/banner_mobile.d34f57d9d5a2a8e83dac.png",
+    "static/media/discoveries2.png": "/IntiBiome/static/media/discoveries2.a6a7dd91c4f2d9424ad6.png",
+    "static/media/midbanner_mobile.png": "/IntiBiome/static/media/midbanner_mobile.e9a9a7f8016a1c0f6996.png",
+    "static/media/discoveries1.png": "/IntiBiome/static/media/discoveries1.8cbe687a182ba13e271a.png",
+    "static/media/discoveries3.png": "/IntiBiome/static/media/discoveries3.2e8069fcc538b5a352e5.png",
+    "static/media/blue.png": "/IntiBiome/static/media/blue.f0c459917267df0ed921.png",
+    "static/media/green.png": "/IntiBiome/static/media/green.bef6744d9f327bb61a3a.png",
+    "static/media/pink.png": "/IntiBiome/static/media/pink.11b15ee11741bb38488a.png",
+    "static/media/icons.png": "/IntiBiome/static/media/icons.744908bd67180602642d.png",
+    "static/media/logo.png": "/IntiBiome/static/media/logo.279882d84fe401069725.png",
+    "static/media/slick.svg": "/IntiBiome/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/IntiBiome/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/IntiBiome/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/IntiBiome/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/IntiBiome/index.html",
+    "main.466d5b11.css.map": "/IntiBiome/static/css/main.466d5b11.css.map",
+    "main.05a8212e.js.map": "/IntiBiome/static/js/main.05a8212e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.466d5b11.css",
+    "static/js/main.05a8212e.js"
+  ]
+}
