@@ -7,14 +7,14 @@ const Handlebar = () => {
     const hbr = `
     <ul class="people_list">
     {{#each people}}
-      <li>{{foda this}}</li>
+      <li>{{UppercaseHelp this}}</li>
     {{/each}}
   </ul>
 `;
 
 const template = Handlebars.compile(hbr);
 
-Handlebars.registerHelper('foda', function (aString:Handlebars) {
+Handlebars.registerHelper('UppercaseHelp', function (aString:Handlebars) {
     return aString.toUpperCase()
 })
 
